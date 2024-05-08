@@ -13,7 +13,7 @@ void FillingSecondStr(string[] str, string[] str2)
         }
     }
 }
-void PrintArray(string[] str)
+void PrintStr(string[] str)
 {
     for (int i = 0; i < str.Length; i++)
     {
@@ -23,4 +23,4 @@ void PrintArray(string[] str)
 }
 
 FillingSecondStr(str, str2);
-PrintArray(str2);
+PrintStr(str2);
