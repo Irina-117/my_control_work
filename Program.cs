@@ -1,1 +1,26 @@
-﻿
+﻿string[] str = new string[6] { "Hello", "my", "^-^", "21", "!&!", "world" };
+string[] str2 = new string[str.Length];
+void SecondStr(string[] str, string[] str2)
+{
+    int k = 0;
+    for (int i = 0; i < str.Length; i++)
+    {
+
+        if (str[i].Length <= 3)
+        {
+            str2[k] = str[i];
+            k++;
+        }
+    }
+}
+void PrintArray(string[] str)
+{
+    for (int i = 0; i < str.Length; i++)
+    {
+        System.Console.Write($"{str[i]} ");
+    }
+    System.Console.WriteLine();
+}
+
+SecondStr(str, str2);
+PrintArray(str2);
