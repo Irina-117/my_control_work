@@ -1,6 +1,6 @@
 ﻿string[] str = new string[6] { "Hello", "my", "^-^", "21", "!&!", "world" };
 string[] str2 = new string[str.Length];
-void SecondStr(string[] str, string[] str2)
+void FillingSecondStr(string[] str, string[] str2)
 {
     int k = 0;
     for (int i = 0; i < str.Length; i++)
@@ -22,5 +22,5 @@ void PrintArray(string[] str)
     System.Console.WriteLine();
 }
 
-SecondStr(str, str2);
+FillingSecondStr(str, str2);
 PrintArray(str2);
